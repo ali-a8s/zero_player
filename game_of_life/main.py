@@ -80,14 +80,10 @@ def create_world(w, h, percentage):
 
 def main():
     # get game settings
-    # w = int(input("Width: "))
-    # h = int(input("Height: "))
-    # percentage = float(input("initial live cell density (0.0 - 1.0): "))
-    # speed = float(input("speed of evolution (in second): "))
-
-    w, h = 30, 20
-    percentage = 0.2
-    speed = 2
+    w = int(input("Width: "))
+    h = int(input("Height: "))
+    percentage = float(input("initial live cell density (0.0 - 1.0): "))
+    speed = float(input("speed of evolution (in second): "))
 
     world = create_world(w, h, percentage)
     round_count = 1
